@@ -1,0 +1,5 @@
+- model: main.Riter
+  pk: 1
+  fields:
+    first_name: Johnn
+    last_name: Lennon
