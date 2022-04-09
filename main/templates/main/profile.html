@@ -10,5 +10,13 @@
 <h1 class="text-center">
     Hello {{ request.user|title }}
 </h1>
+    <div id="messages">
+    {% for message in messages %}
+        <div class="{{ message.tags }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+</div>
+<script src="{% static "main/js/mine.js" %}"></script>
 </body>
 </html>
